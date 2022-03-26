@@ -1,0 +1,91 @@
+body {
+  background-color: #47c7fc;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* nav bar help from W3schools and previous assignments */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #47c7fc;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+li a:hover {
+  background-color: navy;
+  color: orange;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+/* Side by side images from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+* {
+  box-sizing: border-box;
+}
+
+.col {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.col3 {
+  float: left;
+  width: 33.3%;
+  padding: 0px;
+  border: 2px solid #ff9e1b;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Used this link to put my nav bar inside an image
+https://www.w3schools.com/howto/howto_css_navbar_image.asp */
+.background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.image {
+  border: 2px solid #ff9e1b;
+}
