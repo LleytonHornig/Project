@@ -52,7 +52,13 @@
     <h2>The Car - MX</h2>
 
     <div id="car">
-      <img src="images/MX_LAUNCH.jpg" alt="MX" title="The MX" width="400" />
+      <img
+        src="images/MX_LAUNCH.jpg"
+        alt="MX"
+        title="The MX"
+        width="400"
+        id="car-pic"
+      />
     </div>
 
     <p id="caption">
@@ -146,5 +152,35 @@
         <td>TBD*</td>
       </tr>
     </table>
+
+    <hr>
+    
+    <script>
+      function enlargeImage() {
+        console.log("..starting enlarge car image..");
+        const car = document.getElementById("car-pic");
+
+        let w = car.width;
+        w = w * 1.3;
+        car.width = w;
+      }
+
+      document.getElementById("car-pic").onmouseover = function () {
+        enlargeImage();
+      };
+
+      function reduceImage(imageId) {
+        console.log("..starting reduce car image..");
+        const car = document.getElementById("car-pic");
+
+        let w = car.width;
+        w = w / 1.3;
+        car.width = w;
+      }
+
+      document.getElementById("car-pic").onmouseleave = function () {
+        reduceImage();
+      };
+    </script>
   </body>
 </html>

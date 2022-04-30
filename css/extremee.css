@@ -42,6 +42,7 @@ h2 {
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 /* Side by side images from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
@@ -62,7 +63,10 @@ p {
 }
 
 #car {
-  margin-left: 380px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 
 #caption {

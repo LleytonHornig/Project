@@ -43,6 +43,7 @@ h2 {
 p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+  padding: 10px;
 }
 
 /* Side by side images from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
@@ -63,7 +64,10 @@ p {
 }
 
 #car {
-  margin-left: 360px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 
 #carcaption {
@@ -107,4 +111,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }

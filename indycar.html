@@ -59,6 +59,7 @@
         alt="XPEL 375"
         title="The XPEL 375"
         width="400"
+        id="car-pic"
       />
     </div>
 
@@ -102,10 +103,11 @@
     <p>
       <b>Felix Rosenqvist</b> is a 30 year old IndyCar driver from Sweden.
       Rosenqvist joined Arrow McLaren SP in 2020, and is looking forward to his
-      2022 season. He has had a distinguished racing career across many
-      different motorsporting events, such as GT Racing, Formula 3, Formula E,
-      karting, and Formula Renault. He was injured in a major crash during the
-      2021 Detroit GP, so he was not able to finish the remainder of the season.
+      2022 season<span id="dots1">...</span>. He has had a distinguished racing
+      career across many different motorsporting events, such as GT Racing,
+      Formula 3, Formula E, karting, and Formula Renault. He was injured in a
+      major crash during the 2021 Detroit GP, so he was not able to finish the
+      remainder of the season.
     </p>
 
     <p>
@@ -153,7 +155,11 @@
       <tr>
         <td>Long Beach GP</td>
         <td>April 8-10</td>
-        <td>TBD*</td>
+        <td>
+          Felix: P11
+          <br />
+          Pato: P5
+        </td>
       </tr>
       <tr>
         <td>Alabama GP</td>
@@ -228,5 +234,33 @@
     </table>
 
     <hr />
+
+    <script>
+      function enlargeImage() {
+        console.log("..starting enlarge car image..");
+        const car = document.getElementById("car-pic");
+
+        let w = car.width;
+        w = w * 1.3;
+        car.width = w;
+      }
+
+      document.getElementById("car-pic").onmouseover = function () {
+        enlargeImage();
+      };
+
+      function reduceImage(imageId) {
+        console.log("..starting reduce car image..");
+        const car = document.getElementById("car-pic");
+
+        let w = car.width;
+        w = w / 1.3;
+        car.width = w;
+      }
+
+      document.getElementById("car-pic").onmouseleave = function () {
+        reduceImage();
+      };
+    </script>
   </body>
 </html>

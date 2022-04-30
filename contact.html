@@ -60,7 +60,7 @@
         </div>
         <div class="margin">
           Which division of McLaren Racing is your favorite?
-          <div>
+          <div id="racing">
             <input type="radio" name="division" value="f1" />
             <label>Formula 1</label>
             <input type="radio" name="division" value="indy" />
@@ -76,10 +76,34 @@
           <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
         </div>
         <div class="margin">
-          <input type="submit" value="Submit" />
+          <input id="submit" type="submit" value="Submit" />
           <input type="reset" value="Reset" />
         </div>
       </fieldset>
     </form>
+
+    <p id="message"></p>
+
+    <script>
+      function validate() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const racing = document.getElementById("racing").value;
+        const text = document.getElementById("message");
+        if (name == "") {
+          alert("Form is not completed, please fill in the name, email, and racing inputs");
+        } else if (email == "") {
+          alert("Form is not completed, please fill in the name, email, and racing inputs");
+        } else if (racing == "") {
+          alert("Form is not completed, please fill in the name, email, and racing inputs");
+        } else {
+          text.innerText = "Information Submitted! Thank you!";
+        }
+      }
+
+      document.getElementById("submit").onclick = function() {
+        validate();
+      }
+    </script>
   </body>
 </html>
