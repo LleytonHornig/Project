@@ -91,19 +91,25 @@
         const racing = document.getElementById("racing").value;
         const text = document.getElementById("message");
         if (name == "") {
-          alert("Form is not completed, please fill in the name, email, and racing inputs");
+          alert(
+            "Form is not completed, please fill in the name, email, and racing inputs"
+          );
         } else if (email == "") {
-          alert("Form is not completed, please fill in the name, email, and racing inputs");
+          alert(
+            "Form is not completed, please fill in the name, email, and racing inputs"
+          );
         } else if (racing == "") {
-          alert("Form is not completed, please fill in the name, email, and racing inputs");
+          alert(
+            "Form is not completed, please fill in the name, email, and racing inputs"
+          );
         } else {
           text.innerText = "Information Submitted! Thank you!";
         }
       }
 
-      document.getElementById("submit").onclick = function() {
+      document.getElementById("submit").onclick = function () {
         validate();
-      }
+      };
     </script>
   </body>
 </html>

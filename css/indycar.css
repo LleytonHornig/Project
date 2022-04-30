@@ -110,3 +110,26 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+/* could not manage to get this, issues with pictures and nav bar */
+
+@media (max-width: 800px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+  #car {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  ul,
+  li {
+    flex-direction: column;
+  }
+}

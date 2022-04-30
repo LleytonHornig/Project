@@ -112,16 +112,3 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  font-size: 30px;
-  text-align: center;
-}
-
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}

@@ -44,7 +44,7 @@
 
     <div class="background">
       <div class="container">
-        <nav>
+        <!-- <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="f1.html">Formula 1</a></li>
@@ -54,8 +54,20 @@
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
+        
+        Comment: Had to change this to allow for responsive design
+       -->
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="f1.html">Formula 1</a>
+          <a href="indycar.html">IndyCar</a>
+          <a href="extremee.html">Extreme E</a>
+          <a href="sitemap.html">SiteMap</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
       </div>
     </div>
+
     <img
       src="images/glowindarkmcl36.jpg"
       alt="McLaren Formula 1 Glow in the Dark Livery"
@@ -215,7 +227,7 @@
     <button id="blue" type="button">Blue Mode</button>
     <button id="orange" type="button">Orange Mode</button>
 
-    <hr>
+    <hr />
 
     <script>
       function orangeColor() {
@@ -284,7 +296,7 @@
         } else {
           x = x + 5;
         }
-        setTimeout(switchTeams, 10);
+        setTimeout(switchTeams, 30);
       }
 
       document.querySelector("body").onload = function () {
